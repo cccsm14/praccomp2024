@@ -6,8 +6,8 @@
 	- subbullet point
 1 Numerical List 1
 2 Numerical List 2 
-[ ] open check
-[x] checked check box
+-[ ] open check
+-[x] checked check box
 Unformated text
 
 - Text formatting 
