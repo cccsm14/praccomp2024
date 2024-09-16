@@ -86,3 +86,21 @@ print("hello")
 ```r
 x <- 4^2 
 ```
+
+## Task lists 
+
+- [ ] this is an incomplete task 
+- [x] this is a complete task
+- [x] @mentions, #refs, [links], **formatting**, and <del>tags</del> supported
+- [ ] list syntac required any unordered or ordered list supported
+
+## Tables 
+ 
+First Header | Second Header 
+------------ | -------------
+content cell 1 | content cell 2
+content column `| content column 2 | 
+
+## Emojis 
+
+:bug: 
