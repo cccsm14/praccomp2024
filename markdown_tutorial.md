@@ -47,3 +47,10 @@ ordered
 3. Item 3 
 	* Item 3a 
 
+
+## Images 
+
+![maize image](https://www.thoughtco.com/thmb/2CAawLFtlLyoOtHyFQJmbrg9xFc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Maize_Varieties-571a87115f9b58857dec81bf.jpg)
+
+Format: \![Alt text](url)
+
