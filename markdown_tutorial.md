@@ -25,7 +25,7 @@ _You **can** combine them_
 
 _My Poem_ by Charles Maus 
 
->I am not a poet, \ 
+>I am not a poet,\
 >and I know it, 
 
 ## Lists 
@@ -50,7 +50,19 @@ ordered
 
 ## Images 
 
-![maize image](https://www.thoughtco.com/thmb/2CAawLFtlLyoOtHyFQJmbrg9xFc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Maize_Varieties-571a87115f9b58857dec81bf.jpg)
+![maize image](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Maize_Corn_Cultivars.jpg/1200px-Maize_Corn_Cultivars.jpg)
 
-Format: \![Alt text](url)
+Format: \!\[Alt text]\(url)\
+
+## Links
+
+two ways
+
+http://brewerlab.net 
+
+[brewer lab] (http://brewerlab.net)
+
+## Backslash Escapes 
+
+\*literal asterisks\*
 
