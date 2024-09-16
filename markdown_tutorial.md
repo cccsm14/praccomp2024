@@ -20,6 +20,8 @@ _*This text is both italicized and bolded*_
  
 _You **can** combine them_
 
+~This text is stricken~
+
 
 ## Blockquotes 
 
