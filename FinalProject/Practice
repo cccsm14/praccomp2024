@@ -1,0 +1,48 @@
+import PIL
+from PIL import Image
+import numpy as np
+import sys 
+import os
+import csv
+
+myDir = "/c/Users/cccsm/praccomp2024/FinalProject/ImagesforModelTraining/images"
+#print(myDir)
+def createFileList(myDir, format='.jpg'):
+    fileList = []
+    labels = []
+    names = []
+    keywords = {"LM20" : "1","LM19": "0",} 
+    for root, dirs, files in os.walk(myDir, topdown=True):
+        for name in files:
+            if name.endswith(format):
+                fullName = os.path.join(root, name)
+                fileList.append(fullName)
+            for keyword in keywords:
+                if keyword in name:
+                    labels.append(keywords[keyword])
+                else:
+                    continue
+            names.append(name)
+            print(name)
+    return fileList, labels, names
+
+# load the original image
+fileList, labels, names  = createFileList('c:/Users/cccsm/praccomp2024/FinalProject/ImagesForModelTraining/images')
+i = 0
+for file in fileList:
+    print(file)
+    img_file = Image.open(file)
+    # img_file.show()# get original image parameters...
+    width, height = img_file.size
+    format = img_file.format
+    mode = img_file.mode
+    value = np.asarray(img_file.getdata(), dtype=np.int64).reshape((width, height))
+    value = value.flatten()
+    
+    value = np.append(value,labels[i])
+    i +=1
+    
+    print(value)
+    with open("inflorpec_training.csv", 'a') as f:
+        writer = csv.writer(f)
+        writer.writerow(value)
