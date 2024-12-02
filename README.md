@@ -23,3 +23,6 @@ Unformated text
 
 
 
+### Final Project Info 
+
+For this project, the goal was to create or adapt a machine learning model to recognize microscope images I use in my researchThe. In the _"Final Project Folder"_ the borrowed code originally found on TensorFlow's website (https://www.tensorflow.org/tutorials/images/classification) can be found. The images I used for training my model as well as the adapted code for my project are also found here. 
